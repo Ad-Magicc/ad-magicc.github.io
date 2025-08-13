@@ -1,0 +1,54 @@
+ .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  .carousel-inner {
+    height: 100vh; 
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+  } 
+
+ .carousel-item {
+    position: relative;
+  }
+
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust 0.4 for darkness level */
+    z-index: 1;
+   }
+
+ .list-color{
+  color: #dee2e6;
+ }
+
+div.scroll-container {
+  background-color: #141212;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: double;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
